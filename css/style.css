@@ -6,6 +6,10 @@ body {
   margin: 0;
 }
 
+h1 {
+  font-family: var(--heading-font);
+  font-weight: 700;
+}
 
 /* header nav */
 .header {
@@ -37,6 +41,45 @@ body {
 }
 
 /* header nav */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--blue); /* fallback while the image loads */
+    background-image: url("https://www.bcusu.com/pageassets/login/1528_BCUSU_log_in_page_shapes.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--dark);
+    padding: 56px 0 72px;
+}
+
+.main-btn {
+    padding: 15px 20px;
+    background: #F4AA82;
+    color: #292929;
+    border-radius: 100px;
+    text-decoration: none !important;
+    display: flex;
+    width: 40%;
+    margin: 5px;
+    margin-top: 1em;
+    justify-content: center;
+    margin-bottom: 1em;
+    font-family: '', sans-serif !important;
+    font-weight: normal;
+    cursor: pointer;
+    border: 0px solid #292929;
+    transform: translateY(0);
+    transition: transform .3s cubic-bezier(.5, 2.5, .7, .7), box-shadow .3s cubic-bezier(.5, 2.5, .7, .7);
+}
+.main-btn:hover {
+    background: #F4AA82;
+    color: #292929;
+    border: 1px solid #292929;
+    box-shadow: 0 6px 0 0 #292929;
+    transform: translateY(-6px);
+}
 
 
 .layout {
