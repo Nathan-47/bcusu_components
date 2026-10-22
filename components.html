@@ -30,16 +30,29 @@
     </header>
 
     <nav class="navbar navbar-expand-md header-inner" data-bs-theme="dark">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNav"
-                aria-controls="topNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNav"
+            aria-controls="topNav" aria-expanded="false" aria-label="Toggle navigation">
+            <p class="navbar-toggler-text">Menu</p>
+        </button>
+        <div class="container">
             <div class="collapse navbar-collapse" id="topNav">
                 <div class="navbar-nav">
-                    <a class="nav-link" href="./components.html">Components</a>
-                    <a class="nav-link" href="#">Accessibility</a>
+
+                    <!-- Desktop: normal link -->
+                    <a class="nav-link d-none d-md-block" href="./components.html">Components</a>
+
+                    <!-- Mobile: toggle that opens the sidebar links -->
+                    <a class="nav-link d-md-none nav-toggle-arrow" href="#componentsMenu" role="button"
+                        data-bs-toggle="collapse" aria-expanded="false" aria-controls="componentsMenu">
+                        Components
+                    </a>
+                    <div class="collapse d-md-none" id="componentsMenu">
+                        <div id="navSidebarMount"></div>
+                    </div>
+
+                    <a class="nav-link" href="./pages/accessibility.html">Accessibility</a>
+                    <a class="nav-link" href="./pages/styles.html">Styles</a>
                 </div>
             </div>
         </div>
@@ -61,7 +74,9 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./js/data_nav.js"></script>
+    <script src="./js/dataNav.js"></script>
+    <script src="./js/hideOnClick.js"></script>
+    <script src="./js/sidebarNav.js"></script>
 </body>
 
 </html>
