@@ -11,5 +11,8 @@ document.querySelectorAll("[data-page]").forEach((link) => {
 
     // Will dynamically display individual component pages 
     displayContent.innerHTML = html;
+    window.addCopyButtons(displayContent);
   });
 });
+
+
