@@ -1,29 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="./images/BCUSUlogo_2022.jpg">
-
-  <title>Button | BCUSU Design System</title>
-</head>
-<body>
 <h1>Button</h1>
 
-<p>Use buttons to let users perform actions.</p>
-
 <div class="example">
-    <button>Primary button</button>
+  <button class="main-btn">Download our strategic plan</button>
 </div>
 
-<h2>HTML</h2>
-
 <pre><code>
-&lt;button class="btn"&gt;
+&lt;button class="main-btn"&gt;
     Primary button
 &lt;/button&gt;
 </code></pre>
 
-</body>
-</html>
+<pre data-label="CSS"><code>
+.main-btn {
+    padding: 15px 20px;
+    background: #F4AA82;
+    color: #292929;
+    border-radius: 100px;
+    text-decoration: none !important;
+    display: flex;
+    width: 40%;
+    margin: 5px auto;
+    margin-top: 1em;
+    justify-content: center;
+    margin-bottom: 1em;
+    font-family: 'poppinsBold', sans-serif !important;
+    font-weight: normal;
+    cursor: pointer;
+    border: 0px solid #292929;
+    transform: translateY(0);
+    transition: transform .3s cubic-bezier(.5, 2.5, .7, .7),
+                box-shadow .3s cubic-bezier(.5, 2.5, .7, .7);
+}
+.main-btn:hover {
+    background: #F4AA82;
+    color: #292929;
+    border: 1px solid #292929;
+    box-shadow: 0 6px 0 0 #292929;
+    transform: translateY(-6px);
+}
+</code></pre>
+
+<h2>When to use this component</h2>
+<p>Use the button to take user to the action in question that is written as text on button.
+    <br />
+    An example is looking at this button above which helps users carry out an action for example “Download Strategic Plan”.
+</p>
