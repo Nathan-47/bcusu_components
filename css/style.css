@@ -17,6 +17,20 @@ body {
   font-weight: 500;
 }
 
+a {
+  color: var(--secondary-color);
+  background: var(--third-color);
+  text-decoration: underline;
+  text-underline-offset: 0.1em;
+  text-decoration-thickness: max(1px, 0.0625rem);
+}
+
+a:hover {
+  color: var(--secondary-color);
+  background: transparent;
+  text-decoration: none;
+}
+
 h1 {
   font-family: var(--heading-font);
   font-weight: 700;
@@ -34,6 +48,7 @@ h1 {
 .header a {
   color: var(--fourth-color);
   text-decoration: none;
+  background: none !important;
 }
 
 .header a:hover {
