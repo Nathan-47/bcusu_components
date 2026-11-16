@@ -3,12 +3,18 @@
   const componentsMenu = document.getElementById('componentsMenu');
   const sidebar = document.querySelector('.sidebar');
   const mobile = window.matchMedia('(max-width: 767.98px)');
+  const hideIntro = document.getElementById('hideThis');
+
 
   if (!topNav || !sidebar) return;
 
   // When a nav component link is clicked hide the nav menu (for mobile screens)
   sidebar.addEventListener('click', (e) => {
+    
+    hideIntro.classList.add('hide');
+
     if (!e.target.closest('a') || !mobile.matches) return;
+
 
     bootstrap.Collapse.getOrCreateInstance(topNav).hide();
     if (componentsMenu) {
