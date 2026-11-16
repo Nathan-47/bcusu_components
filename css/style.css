@@ -17,6 +17,10 @@ body {
   font-weight: 500;
 }
 
+.hide {
+  display: none;
+}
+
 a {
   color: var(--secondary-color);
   background: var(--third-color);
